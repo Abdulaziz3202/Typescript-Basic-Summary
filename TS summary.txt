@@ -1,0 +1,53 @@
+Install the following:
+1- Node.js.
+2- TypeScript package
+> npm install typescript -g
+
+Any TypeScript file should end with .ts extension.
+
+To compile ts file and it will generate js files:
+> tsc filename.ts
+
+specifying generated js file name:
+> tsc TypeScriptFileName --out customName.js
+
+Make the generated js file take any change on ts file automaticaly:
+> tsc TypeScriptFile.ts--out output-script.js watch
+
+------------------------------------------------------------------------------------------------
+
+import {className} from './TypeScriptFileName';
+
+export BMW extends Car{
+
+//model name,numbermanufactureyear
+models=[string,number]; // Tuples
+
+foundationYear:number;
+
+country:string;
+
+readonly isItHybrid: boolean; //You can't assign new value except by constructor
+
+protected features:string[];//Accessible only within class and their extensions 
+
+public color:any;//Accessible with no restrictions
+
+private branches: boolean | string;
+
+constructor(country:string,foundationYear:number){
+this.country=country;
+this.foundationYear=foundationYear;
+}
+
+function finctionName(varName1 ? : number=0 ,varName2) : number{   }
+}
+
+Object initialization
+
+carObj: Car=new Car();
+
+------------------------------------------------------------------------------------------------
+
+
+
