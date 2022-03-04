@@ -16,6 +16,11 @@ Make the generated js file take any change on ts file automaticaly:
 
 ------------------------------------------------------------------------------------------------
 
+
+=>>>> in TS you can only declare member variables directly in the class. 
+Assigning values can be done only inside a method, like a constructor for example.
+
+
 import {className} from './TypeScriptFileName';
 
 export BMW extends Car{
